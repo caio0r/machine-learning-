@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado da Previsão</title>
+    <style>
+        /* Fundo e fontes */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FDEBD0; /* Fundo pastel */
+            color: #5D4037; /* Marrom claro */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Contêiner central */
+        .container {
+            background-color: #FFF3E0; /* Fundo suave */
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 340px;
+        }
+
+        /* Título */
+        h1 {
+            font-size: 1.5em;
+            color: #D84315; /* Coral */
+            margin-bottom: 15px;
+        }
+
+        /* Texto de resultado */
+        p {
+            font-size: 1.1em;
+            margin: 10px 0 20px;
+        }
+
+        /* Botão Voltar */
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background-color: #FF8A65; /* Coral */
+            padding: 10px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            font-size: 1em;
+        }
+
+        a:hover {
+            background-color: #E64A19; /* Escurece ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Previsão de Vendas de Sorvete</h1>
+        <p>Com uma temperatura de {{ horas }} °C, a previsão de vendas de sorvete é de {{ produtividade }} unidades.</p>
+        <a href="/">Voltar</a>
+    </div>
+</body>
+</html>
